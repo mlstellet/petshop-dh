@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
+/********** GLOBAL **********/
+
 * {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
@@ -21,6 +23,11 @@ header {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 header .navigation ul {
     display: flex;
 }
@@ -32,7 +39,6 @@ header .navigation ul li{
     font-size: 20x;
     text-transform: uppercase;
     list-style: none;
-    color: white;
 
     cursor: pointer;
 }
@@ -41,6 +47,38 @@ header .navigation ul li{
     display: flex;
     justify-content: center;
 }
+
+/************* FOOTER *************/
+
+footer p {
+    text-transform: uppercase;
+}
+
+footer .container {
+    background-color: #FFBE51;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    padding: 30px 110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer iframe {
+    width: 450px;
+    height: 250px;
+}
+
+.copyright p {
+    margin: 0;
+    padding: 15px;
+    background: #C4C4C4;
+
+    text-align: center;
+
+}
+
+/*********** BANNER ***********/
 
 .banner  {
     width: 70%;
@@ -86,13 +124,24 @@ header .navigation ul li{
     justify-content: space-between;
 }
 
-.offers img {
+.offer-img {
     max-width: 180px;
-     transition: all .2s linear;
+    display: flex;
+    justify-content: center;
 }
 
-.offers img:hover {
+.offers article {
+    max-width: 210px;
+    padding: 15px;
+     transition: all .2s linear;
+}
+.offers article:hover{
+    background-color: #f3f3f3;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.offers img {
+    max-width: 180px;
 }
     
 .prices a {
@@ -136,35 +185,4 @@ header .navigation ul li{
 .info .text {
     width: 500px;
     padding-left: 60px;
-}
-
-
-/************* FOOTER *************/
-
-footer p {
-    text-transform: uppercase;
-}
-
-footer .container {
-    background-color: #FFBE51;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
-    padding: 30px 110px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-footer iframe {
-    width: 450px;
-    height: 250px;
-}
-
-.copyright p {
-    margin: 0;
-    padding: 15px;
-    background: #C4C4C4;
-
-    text-align: center;
-
 }

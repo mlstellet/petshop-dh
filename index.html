@@ -11,12 +11,15 @@
 <body>
 
     <header>
-        <img src="img/Petshop DH-logo-white 1.png" alt="Logo">
+        <a href="index.html">
+            <img src="img/Petshop DH-logo-white 1.png" alt="Logo">
+        </a>
+    
         <nav class="navigation">
             <ul>
-                <li>Sobre</li>
-                <li>Serviços</li>
-                <li>Contato</li>
+                <li> <a href="#about">Sobre</a></li>
+                <li><a href="/servicos.html">Serviços</a></li>
+                <li> <a href="/contato.html">Contato</a></li>
                 <li>Login</li>
             </ul>
         </nav>
@@ -39,8 +42,10 @@
                 <h2>Serviços</h2>
                 <div class="offers">
                     <article>
-                        <a href="">
-                        <img src="img/doguinho.jpg" alt="">
+                        <a href="/servicos.html#banho-completo">
+                        <div class="offer-img">
+                            <img src="img/doguinho.jpg" alt="">
+                        </div>
                         <div class="prices">
                            
                                 <p>Banho Completo</p>
@@ -50,31 +55,34 @@
                     </article>
 
                     <article>
-                        <a href="">
-                        <img src="img/doguinho.jpg" alt="">
-                        <div class="prices">
-                           
+                        <a href="/servicos.html#banho-tosa">
+                            <div class="offer-img">
+                                <img src="img/doguinho.jpg" alt="">
+                            </div>
+                            <div class="prices">
                                 <p>Banho e Tosa</p>
                                 <span>R$ 60,00</span>
-                            </a> 
+                        </a> 
                         </div>
                     </article>
-                    
+
                     <article>
-                        <a href="">
-                        <img src="img/doguinho.jpg" alt="">
-                        <div class="prices">
-                           
+                        <a href="/servicos.html#consulta">
+                            <div class="offer-img">
+                                <img src="img/doguinho.jpg" alt="">
+                            </div>
+                            <div class="prices">
                                 <p>Consulta Veterinária</p>
                                 <span>R$ 150,00</span>
-                            </a> 
+                        </a> 
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
-        <section class="sections">
+        <section id="about" class="sections">
             <div class="info">
                 <img src="img/texto banner.png" alt="Imagem em Destsque">
                 <div class="text">
