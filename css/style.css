@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFBE51;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    padding: 0 110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navigation ul {
+    display: flex;
+}
+
+header .navigation ul li{
+    margin: 30px;
+
+    font-weight: 800;
+    font-size: 20x;
+    text-transform: uppercase;
+    list-style: none;
+    color: white;
+
+    cursor: pointer;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+}
+
+.banner  {
+    width: 70%;
+    margin: 170px 70px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .text h1 {
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+/************* SERVICES *************/
+
+.services-section {
+    background-color: #E5E5E5;
+    padding: 0;
+}
+
+.services {
+    margin: 40px 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services h2 {
+    margin: 35px 0 0;;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.offers {
+    padding: 35px 0 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers img {
+    max-width: 180px;
+     transition: all .2s linear;
+}
+
+.offers img:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+    
+.prices a {
+    color: black;
+    text-decoration: none;
+    transition: all .2s linear;
+    }
+
+.prices a:hover, a:focus {
+    color: #494949;
+    }
+
+.prices p {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 2px 0;
+}
+
+.prices span {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 2px 0;
+}
+
+/************* INFO *************/
+
+.info  {
+    width: 70%;
+    margin: 100px 70px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info img {
+    width: 500px;
+    padding-right: 60px;
+}
+
+.info .text {
+    width: 500px;
+    padding-left: 60px;
+}
+
+
+/************* FOOTER *************/
+
+footer p {
+    text-transform: uppercase;
+}
+
+footer .container {
+    background-color: #FFBE51;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    padding: 30px 110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer iframe {
+    width: 450px;
+    height: 250px;
+}
+
+.copyright p {
+    margin: 0;
+    padding: 15px;
+    background: #C4C4C4;
+
+    text-align: center;
+
+}
