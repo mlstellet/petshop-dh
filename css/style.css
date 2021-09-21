@@ -78,8 +78,6 @@ footer .contact {
 
 footer .map {
     margin: 0 25px;
-    /* width: 450px;
-    height: 100px; */
 }
 
 .copyright p {
@@ -93,20 +91,29 @@ footer .map {
 
 /*********** BANNER ***********/
 
-.banner  {
-    width: 70%;
-    margin: 170px 70px;
+.banner {
+    width: 1000px;
+    margin: 170px 0;
 
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.banner .text{
+    width: 500px;
 }
 
 .banner .text h1 {
+   
     font-weight: 800;
     font-size: 40px;
     text-transform: uppercase;
 }
 
+.banner img, .info img {
+    width: 499px;
+}
 
 /************* SERVICES *************/
 
@@ -117,7 +124,7 @@ footer .map {
 
 .services {
     margin: 40px 0;
-    width: 70%;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,7 +141,7 @@ footer .map {
     padding: 35px 0 35px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .offer-img {
@@ -181,23 +188,22 @@ footer .map {
 
 /************* INFO *************/
 
-.info  {
-    width: 70%;
-    margin: 100px 70px;
+.info {
+    width: 1000px;
+    margin: 170px 0;
 
     display: flex;
-    justify-content: space-between;
-}
-
-
-.info img {
-    width: 500px;
-    padding-right: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .info .text {
+    width: 400px;
+}
+
+.info img {
     width: 500px;
-    padding-left: 60px;
 }
 
 @media (max-width: 1060px) {
@@ -219,6 +225,31 @@ footer .map {
        justify-content: space-evenly;
    }
 
+   /* CONTENT */
+   .banner {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .banner .text {
+    width: 80%;
+    }
+
+    .offers {
+        justify-content: space-evenly;
+    }
+
+
+    .info .text, .info img  {
+        margin: 30px;
+    }
+
+    .info .text {
+        width: 500px;
+    
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -230,6 +261,14 @@ footer .map {
         justify-content: space-around;
     }
 
+    .info .text, .info img  {
+        margin: 30px 0;
+    }
+
+    .offers {
+        flex-direction: column;
+        align-items: center;
+    }
    
 }
 
@@ -242,6 +281,14 @@ footer .map {
   header ul {
       flex-wrap: wrap;
       justify-content: center;
+  }
+
+  .banner img, .info img {
+      width: 350px;
+  }
+
+  .info {
+      width: 70vw;
   }
 
 }
