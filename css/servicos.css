@@ -39,6 +39,15 @@
     align-items: flex-start;
 } 
 
+.services-offers image {
+    width: 500px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .services-offers .text {
     width: 500px;
     max-width: 500px;
@@ -110,6 +119,21 @@
     .text {
         margin-left: 20px;
     }
+
+    .title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offers button {
+        align-self: center;
+    }
+
+    .offers img {
+        margin: 0 0 20px;
+        align-self: center;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -118,17 +142,9 @@
         justify-content: center;
     }
 
-     .offers img {
-        margin-bottom: 30px;
+    .offers .text {
+        width: 70vw;
+        margin: 0 30px 0 0;
     }
 
-    .title{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .offers button {
-        align-self: center;
-    }
-
-}
+} 
