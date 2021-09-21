@@ -16,11 +16,16 @@ body {
 header {
     background-color: #FFBE51;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
-    padding: 0 110px;
+    padding: 0;
+    margin: auto;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+header img {
+    margin: 15px 0;
 }
 
 a {
@@ -29,7 +34,9 @@ a {
 }
 
 header .navigation ul {
+    padding: 0 15px;
     display: flex;
+    align-items: center;
 }
 
 header .navigation ul li{
@@ -37,6 +44,7 @@ header .navigation ul li{
 
     font-weight: 800;
     font-size: 20x;
+    text-align: center;
     text-transform: uppercase;
     list-style: none;
 
@@ -64,9 +72,14 @@ footer .container {
     align-items: flex-start;
 }
 
-footer iframe {
-    width: 450px;
-    height: 250px;
+footer .contact {
+    margin: 0 25px 25px;
+}
+
+footer .map {
+    margin: 0 25px;
+    /* width: 450px;
+    height: 100px; */
 }
 
 .copyright p {
@@ -185,4 +198,50 @@ footer iframe {
 .info .text {
     width: 500px;
     padding-left: 60px;
+}
+
+@media (max-width: 1060px) {
+    header {
+        padding: 0;
+        margin: auto;
+    }
+
+    header img {
+        margin: 15px;
+    }
+
+    header .navigation ul li {
+        margin: 15px;
+    }
+
+   footer .container {
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+   }
+
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    footer .container{
+        justify-content: space-around;
+    }
+
+   
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+
+  header ul {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
 }

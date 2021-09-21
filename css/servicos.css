@@ -29,9 +29,10 @@
 }
 
  .services-offers .offers {
-    width: 80%;
+    width: 1000px;
     padding: 40px;
     margin: 20px 0;
+    align-items: center;
 
     display: flex;
     justify-content: space-evenly;
@@ -41,6 +42,7 @@
 .services-offers .text {
     width: 500px;
     max-width: 500px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     
@@ -51,6 +53,7 @@
     margin-bottom: 10px;
     display: inline-flex;
     align-items: baseline;
+    flex-wrap: wrap;
 
 } 
 
@@ -67,7 +70,7 @@
 }
 
 .services-offers .offers button {
-    width: 50%;
+    width: 250px;
     margin: 18px 0 0;
     padding: 5px;
     border: 0;
@@ -86,5 +89,46 @@
     color: #FFBE51;
     background: white; 
     box-shadow: inset 0 0 2px 1px #FFBE51;
+
+}
+
+
+@media (max-width: 1060px) {
+
+    .services-offers .offers {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .services-offers .offers {
+        align-items: center;
+    }
+
+    .text {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .services-offers .offers {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+     .offers img {
+        margin-bottom: 30px;
+    }
+
+    .title{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .offers button {
+        align-self: center;
+    }
 
 }
